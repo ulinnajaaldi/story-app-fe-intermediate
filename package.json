@@ -1,0 +1,40 @@
+{
+  "name": "story-app",
+  "version": "1.0.0",
+  "description": "Story App with Webpack Browstep",
+  "main": "index.js",
+  "scripts": {
+    "build:prod": "webpack --config webpack.prod.js",
+    "build:dev": "webpack serve --config webpack.dev.js",
+    "prettier:check": "prettier --check .",
+    "prettier:format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ulinnaja-aldi.vercel.app",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "10.4.13",
+    "babel-loader": "^9.1.0",
+    "clean-webpack-plugin": "4.0.0",
+    "copy-webpack-plugin": "11.0.0",
+    "css-loader": "6.7.2",
+    "html-webpack-plugin": "5.5.0",
+    "postcss-loader": "7.0.1",
+    "prettier": "2.7.1",
+    "sass": "1.56.1",
+    "sass-loader": "13.2.0",
+    "style-loader": "3.3.1",
+    "webpack": "5.75.0",
+    "webpack-cli": "5.0.0",
+    "webpack-dev-server": "4.11.1",
+    "webpack-merge": "5.8.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "2.11.6",
+    "bootstrap": "5.2.2",
+    "bootstrap-icons": "1.10.2"
+  }
+}
