@@ -1,0 +1,60 @@
+*{
+    font-family: 'Lobster', cursive;
+}
+h1,h2,h3,h4,h5,h6,h7,p{
+  margin: 0;
+}
+
+//
+// Custom classes
+//
+.navbar-brand {
+  font-size: 2rem;
+}
+.btn{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card {
+  max-width: 700px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #f2f7f5;
+  border-color: black;
+  filter: drop-shadow(5px 5px 0px black);
+  .card-img-top {
+    object-fit: cover;
+    height: 180px;
+    border-bottom: 1px solid black;
+  }
+}
+
+
+//
+// Custom button color
+//
+.btn-primary{
+  background-color: #8bd3db;
+  border-color: #8bd3db;
+  color: rgba(0, 0, 0, 0.55);
+  
+  &:hover, &:focus, &:active, &:focus:active, &:focus-visible{
+    background-color: #7cc9d1;
+    border-color: #7cc9d1;
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+.btn-light{
+  background-color: #ffffff;
+  border-color: #000000;
+  color: rgba(0, 0, 0, 0.9);
+  filter: drop-shadow(3px 3px 0px black);
+  transition: all 0.2s ease-in-out;
+  
+  &:hover, &:focus, &:active, &:focus:active, &:focus-visible{
+    background-color: #ffffff;
+    border-color: #000000;
+    color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-2px);
+  }
+}
