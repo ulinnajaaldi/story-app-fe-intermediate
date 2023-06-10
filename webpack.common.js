@@ -67,11 +67,27 @@ module.exports = {
       template: path.resolve(__dirname, 'src/views/index.html'),
       ...htmlWebpackPluginConfig,
     }),
+    new HtmlWebpackPlugin({
+      title: 'Ceritain! - User Dashboard',
+      filename: 'user/dashboard.html',
+      template: path.resolve(__dirname, 'src/views/user/dashboard.html'),
+      ...htmlWebpackPluginConfig,
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Ceritain! - Tambah Ceritamu',
+      filename: 'user/add-story.html',
+      template: path.resolve(__dirname, 'src/views/user/add-story.html'),
+      ...htmlWebpackPluginConfig,
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
           from: path.resolve(__dirname, 'src/public/'),
           to: path.resolve(__dirname, 'dist/'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/public/'),
+          to: path.resolve(__dirname, 'dist/user/'),
         },
       ],
     }),
