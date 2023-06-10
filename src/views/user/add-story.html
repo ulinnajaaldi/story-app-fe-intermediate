@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <header>
+      <navbar-element brandName="<%= brandName %>"></navbar-element>
+    </header>
+
+    <main class="container">
+      <section class="d-flex flex-column justify-content-center align-items-center mt-5">
+        <img
+          src="assets/images/cats.png"
+          alt="gambar kucing imut"
+          class="object-fit-cover"
+          style="width: 340px"
+        />
+        <h5>Add Stori</h5>
+        <p>Ceritakan semua yang pengen kamu ceritakan!</p>
+      </section>
+    </main>
+
+    <footer class="container py-5">
+      <footer-element></footer-element>
+    </footer>
+  </body>
+</html>
