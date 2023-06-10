@@ -1,15 +1,28 @@
 *{
     font-family: 'Lobster', cursive;
 }
-h1,h2,h3,h4,h5,h6,h7,p{
+h1,h2,h3,h4,h5,h6,p{
   margin: 0;
 }
+
+//
+// Custom variables
+//
+$transition-all: all 0.3s ease-in-out;
+
 
 //
 // Custom classes
 //
 .navbar-brand {
   font-size: 2rem;
+}
+.fixed-top{
+  position: fixed !important;
+}
+.navbar-scrolled{
+  background-color: #ffffff ;
+  border-bottom: 1px solid black;
 }
 .btn{
   padding-left: 20px;
@@ -22,12 +35,30 @@ h1,h2,h3,h4,h5,h6,h7,p{
   background-color: #f2f7f5;
   border-color: black;
   filter: drop-shadow(5px 5px 0px black);
+  border-radius: 12px;
   .card-img-top {
     object-fit: cover;
     height: 180px;
     border-bottom: 1px solid black;
-  }
+    border-radius: 12px 12px 0 0;
+  }  
 }
+#profile-card{
+  width: 700px;
+  background-color: #ffffff !important;
+}
+#profile-picture{
+  width: 94px;
+  height: 94px;
+  border: 1px solid black;
+  filter: drop-shadow(2px 2px 0px black);
+}
+#user-post-element{
+  width: 700px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
 
 
 //
@@ -49,7 +80,7 @@ h1,h2,h3,h4,h5,h6,h7,p{
   border-color: #000000;
   color: rgba(0, 0, 0, 0.9);
   filter: drop-shadow(3px 3px 0px black);
-  transition: all 0.2s ease-in-out;
+  transition: $transition-all;
   
   &:hover, &:focus, &:active, &:focus:active, &:focus-visible{
     background-color: #ffffff;
@@ -58,3 +89,20 @@ h1,h2,h3,h4,h5,h6,h7,p{
     transform: translateY(-2px);
   }
 }
+
+//
+// Custom spinner
+//
+.spinner-grow {
+  width: 1rem;
+  height: 1rem;
+}
+
+.spinner-grow:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.spinner-grow:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
