@@ -35,15 +35,13 @@ const Home = {
         '/' +
         date.getFullYear();
       section.innerHTML += `
-          <div class="col" key=${story.id}>
-              <div class="card">
-              <img src="${story.photoUrl}" class="card-img-top" alt="${story.name}">
-              <div class="card-body">
-                  <h5 class="card-title">${story.name}</h5>
-                  <p class="card-text">${story.description}</p>
-                  <p class="card-text"><small class="text-muted">Dibuat pada: ${formattedDate}</small></p>
-              </div>
-              </div>
+          <div class="card">
+            <img src="${story.photoUrl}" class="card-img-top" alt="${story.name}">
+            <div class="card-body">
+                <h5 class="card-title">${story.name}</h5>
+                <p class="card-text">${story.description}</p>
+                <p class="card-text"><small class="text-muted">Dibuat pada: ${formattedDate}</small></p>
+            </div>
           </div>
           `;
     });
