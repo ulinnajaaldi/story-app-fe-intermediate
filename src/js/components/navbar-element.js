@@ -18,8 +18,17 @@ class NavbarElement extends LitWithoutShadowDom {
   }
 
   render() {
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('nav');
+      if (window.scrollY > 0) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled');
+      }
+    });
+
     return html`
-      <nav class="navbar bg-body-tertiary navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">${this.brandName}</a>
           <button
@@ -50,8 +59,8 @@ class NavbarElement extends LitWithoutShadowDom {
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-3 align-items-center pe-3">
                 <nav-link to="/" content="Home"></nav-link>
-                <nav-link to="/add-story" content="Tambah Ceritamu"></nav-link>
-                <nav-link-button to="/user-dashboard" content="Dashboard"></nav-link-button>
+                <nav-link to="/user/add-story.html" content="Tambah Ceritamu"></nav-link>
+                <nav-link-button to="/user/dashboard.html" content="Dashboard"></nav-link-button>
               </ul>
             </div>
           </div>
