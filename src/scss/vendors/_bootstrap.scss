@@ -43,11 +43,37 @@
 @import '~bootstrap/scss/navbar'; // Requires nav
 @import '~bootstrap/scss/card';
 @import '~bootstrap/scss/offcanvas';
+@import '~bootstrap/scss/spinners';
 //
 // Utilities API untuk menghasilkan utility classes
 //
 @import '~bootstrap/scss/utilities/api';
- 
+
 //
 // Tambahkan custom code di sini
 //
+@each $size in 6 7 8 {
+    .m-#{$size} {
+      margin: #{$size * $spacer} !important;
+    }
+    .mt-#{$size} {
+      margin-top: #{$size * $spacer} !important;
+    }
+    .mb-#{$size} {
+      margin-bottom: #{$size * $spacer} !important;
+    }
+    .ml-#{$size} {
+      margin-left: #{$size * $spacer} !important;
+    }
+    .mr-#{$size} {
+      margin-right: #{$size * $spacer} !important;
+    }
+    .mx-#{$size} {
+      margin-left: #{$size * $spacer} !important;
+      margin-right: #{$size * $spacer} !important;
+    }
+    .my-#{$size} {
+      margin-top: #{$size * $spacer} !important;
+      margin-bottom: #{$size * $spacer} !important;
+    }
+  }
