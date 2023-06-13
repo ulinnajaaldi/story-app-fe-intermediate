@@ -46,6 +46,16 @@ $transition-all: all 0.3s ease-in-out;
 #profile-card{
   width: 700px;
   background-color: #ffffff !important;
+  @media (max-width: 425px) {
+    max-width: 400px;
+    width: auto;
+    .flex-row{
+      flex-direction: column !important;
+    }
+    .card-title{
+      text-align: center !important;
+    }
+  }
 }
 #profile-picture{
   width: 94px;
@@ -57,9 +67,57 @@ $transition-all: all 0.3s ease-in-out;
   width: 700px;
   margin: 0 auto;
   padding: 32px 0;
+  @media (max-width: 425px) {
+    max-width: 400px;
+    width: auto;
+    text-align: center !important;
+  }
 }
+#card-crud{
+  .btn{
+    padding: 6px 12px;
+    border: 1px solid black;
+    filter: drop-shadow(2px 2px 0px black);
+  }
+  .btn-warning{
+    color: rgba(0, 0, 0, 0.9);
+    transition: all 0.2s ease-in-out;
+    &:hover, &:focus, &:active, &:focus:active, &:focus-visible{
+      background-color: #fbab2b;
+      border-color: black;
+      color: rgba(0, 0, 0, 0.9);
+      transform: translateY(-4px);
+    }
+  }
+  .btn-danger{
+    color: rgba(0, 0, 0, 0.9);
+    transition: all 0.2s ease-in-out;
+    &:hover, &:focus, &:active, &:focus:active, &:focus-visible{
+      background-color: #f8626a;
+      border-color: black;
+      color: rgba(0, 0, 0, 0.9);
+      transform: translateY(-4px);
+    }
+  }
+}
+#add-story-form{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px 0;
+  @media (max-width: 425px) {
+    max-width: 400px;
+    width: auto;
+  }
+  textarea{
+    background-color: #ffeaa0;
+    border: 1px solid black;
+    filter: drop-shadow(3px 3px 0px black);
 
-
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}
 
 //
 // Custom button color
@@ -72,6 +130,28 @@ $transition-all: all 0.3s ease-in-out;
   &:hover, &:focus, &:active, &:focus:active, &:focus-visible{
     background-color: #7cc9d1;
     border-color: #7cc9d1;
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+.btn-warning{
+  background-color: #fbab2b;
+  border-color: #fbab2b;
+  color: rgba(0, 0, 0, 0.55);
+
+  &:hover, &:focus, &:active, &:focus:active, &:focus-visible{
+    background-color: #f1a11f;
+    border-color: #f1a11f;
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+.btn-danger{
+  background-color: #f8626a;
+  border-color: #f8626a;
+  color: rgba(0, 0, 0, 0.55);
+
+  &:hover, &:focus, &:active, &:focus:active, &:focus-visible{
+    background-color: #f3565e;
+    border-color: #f3565e;
     color: rgba(0, 0, 0, 0.9);
   }
 }
