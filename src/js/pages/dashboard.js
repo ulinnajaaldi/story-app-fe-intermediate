@@ -3,6 +3,7 @@ const Dashboard = {
     this._showSpinner();
     await this._initialData();
     this._hideSpinner();
+    this._deleteStory();
   },
 
   async _initialData() {
@@ -24,15 +25,19 @@ const Dashboard = {
         '/' +
         date.getFullYear();
       section.innerHTML += `
-            <div class="card">
-              <img src="${story.photoUrl}" class="card-img-top" alt="${story.name}">
-              <div class="card-body">
-                  <h5 class="card-title">${story.name}</h5>
-                  <p class="card-text">${story.description}</p>
-                  <p class="card-text"><small class="text-muted">Dibuat pada: ${formattedDate}</small></p>
-              </div>
-            </div>
-            `;
+            <card-story-dashboard image="${story.photoUrl}" name="${story.name}" description="${story.description}" date="${formattedDate}"></card-story-dashboard>
+          `;
+    });
+  },
+
+  _deleteStory() {
+    const deleteButtons = document.querySelectorAll('#delete-story');
+    deleteButtons.forEach((button) => {
+      button.addEventListener('click', (event) => {
+        event.preventDefault();
+        const story = event.target.closest('card-story-dashboard');
+        story.remove();
+      });
     });
   },
 
