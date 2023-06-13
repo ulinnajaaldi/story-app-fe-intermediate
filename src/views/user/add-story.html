@@ -10,17 +10,52 @@
       <navbar-element brandName="<%= brandName %>"></navbar-element>
     </header>
 
-    <main class="container">
-      <section class="d-flex flex-column justify-content-center align-items-center mt-5">
-        <img
-          src="assets/images/cats.png"
-          alt="gambar kucing imut"
-          class="object-fit-cover"
-          style="width: 340px"
-        />
-        <h5>Add Stori</h5>
-        <p>Ceritakan semua yang pengen kamu ceritakan!</p>
-      </section>
+    <main class="container mt-8">
+      <h5 class="text-center">Submit ceritamu di Ceritain!</h5>
+      <form id="add-story-form" class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="story" class="form-label d-none">Ceritamu</label>
+          <textarea
+            class="form-control"
+            id="validationCustomStory"
+            rows="4"
+            placeholder="Tulis ceritamu"
+            required
+          ></textarea>
+          <div class="invalid-feedback">Cerita tidak boleh kosong</div>
+        </div>
+        <div class="mb-3">
+          <label for="photo" class="form-label">Upload foto</label>
+          <div style="width: 100%; height: 15rem" class="mb-3 d-none">
+            <img
+              class="img-fluid h-100"
+              src=""
+              alt="Evidence of records"
+              id="validationCustomEvidenceImg"
+            />
+            <div
+              class="w-100 h-100 d-none"
+              style="
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+              "
+              id="validationCustomEvidenceImgChange"
+            ></div>
+          </div>
+          <input
+            type="file"
+            class="form-control"
+            id="validationCustomEvidence"
+            accept="image/*"
+            required
+          />
+          <div class="invalid-feedback">Wajib memasukan photo</div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary">Bagikan cerita</button>
+        </div>
+      </form>
     </main>
 
     <footer class="container py-5">
