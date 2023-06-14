@@ -25,7 +25,7 @@ const Dashboard = {
         '/' +
         date.getFullYear();
       section.innerHTML += `
-            <card-story-dashboard image="${story.photoUrl}" name="${story.name}" description="${story.description}" date="${formattedDate}"></card-story-dashboard>
+            <card-story-dashboard id="${story.id}" image="${story.photoUrl}" name="${story.name}" description="${story.description}" date="${formattedDate}"></card-story-dashboard>
           `;
     });
   },

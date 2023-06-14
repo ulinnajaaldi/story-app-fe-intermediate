@@ -35,7 +35,9 @@ class CardStoryDashboard extends LitWithoutShadowDom {
         <div class="card">
           <img src="${this.image}}" class="card-img-top" alt="${this.name}" />
           <div class="card-body">
-            <h5 class="card-title">${this.name}</h5>
+            <h5 class="card-title">
+              <span class="fs-6 text-opacity-50 text-black">Dari </span>${this.name}
+            </h5>
             <p class="card-text">${this.description}</p>
             <p class="card-text">
               <small class="text-muted">Dibuat pada: ${this.date}</small>
@@ -43,9 +45,9 @@ class CardStoryDashboard extends LitWithoutShadowDom {
           </div>
         </div>
         <div class="d-flex flex-column gap-2 mt-2" id="card-crud">
-          <button title="Edit Story" class="btn btn-warning">
+          <a href="/user/edit-story.html?id=${this.id}" title="Edit Story" class="btn btn-warning">
             <i class="bi bi-pencil-square"></i>
-          </button>
+          </a>
           <button title="Delete Story" class="btn btn-danger" id="delete-story">
             <i class="bi bi-trash3"></i>
           </button>
