@@ -79,6 +79,12 @@ module.exports = {
       template: path.resolve(__dirname, 'src/views/user/add-story.html'),
       ...htmlWebpackPluginConfig,
     }),
+    new HtmlWebpackPlugin({
+      title: 'Ceritain! - Edit Cerita',
+      filename: 'user/edit-story.html',
+      template: path.resolve(__dirname, 'src/views/user/edit-story.html'),
+      ...htmlWebpackPluginConfig,
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {

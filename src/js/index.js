@@ -9,11 +9,13 @@ import * as bootstrap from 'bootstrap';
 import Home from './pages/home';
 import Dashboard from './pages/dashboard';
 import AddStory from './pages/add-story';
+import EditStory from './pages/edit-story';
 
 const routes = {
   '/': Home,
   '/user/dashboard.html': Dashboard,
   '/user/add-story.html': AddStory,
+  '/user/edit-story.html': EditStory,
 };
 
 const detectRoute = () => routes[window.location.pathname];
