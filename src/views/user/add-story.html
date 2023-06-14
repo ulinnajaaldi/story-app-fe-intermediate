@@ -15,42 +15,20 @@
       <form id="add-story-form" class="needs-validation" novalidate>
         <div class="mb-3">
           <label for="story" class="form-label d-none">Ceritamu</label>
-          <textarea
-            class="form-control"
-            id="validationCustomStory"
-            rows="4"
-            placeholder="Tulis ceritamu"
+          <textarea-with-validation
+            inputId="validationCustomStory"
+            invalidFeedbackMessage="Cerita tidak boleh kosong"
             required
-          ></textarea>
-          <div class="invalid-feedback">Cerita tidak boleh kosong</div>
+          ></textarea-with-validation>
         </div>
+
         <div class="mb-3">
           <label for="photo" class="form-label">Upload foto</label>
-          <div style="width: 100%; height: 15rem" class="mb-3 d-none">
-            <img
-              class="img-fluid h-100"
-              src=""
-              alt="Evidence of records"
-              id="validationCustomEvidenceImg"
-            />
-            <div
-              class="w-100 h-100 d-none"
-              style="
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-              "
-              id="validationCustomEvidenceImgChange"
-            ></div>
-          </div>
-          <input
-            type="file"
-            class="form-control"
-            id="validationCustomEvidence"
-            accept="image/*"
+          <input-image-with-preview
+            inputId="validationCustomEvidence"
+            invalidFeedbackMessage="Wajib memasukan photo"
             required
-          />
-          <div class="invalid-feedback">Wajib memasukan photo</div>
+          ></input-image-with-preview>
         </div>
         <div class="d-flex justify-content-center">
           <button type="submit" class="btn btn-primary">Bagikan cerita</button>
