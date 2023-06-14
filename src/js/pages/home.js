@@ -38,7 +38,7 @@ const Home = {
           <div class="card">
             <img src="${story.photoUrl}" class="card-img-top" alt="${story.name}">
             <div class="card-body">
-                <h5 class="card-title">${story.name}</h5>
+                <h5 class="card-title"><span class="fs-6 text-opacity-50 text-black">Dari </span>${story.name}</h5>
                 <p class="card-text">${story.description}</p>
                 <p class="card-text"><small class="text-muted">Dibuat pada: ${formattedDate}</small></p>
             </div>

@@ -30,7 +30,7 @@ class NavbarElement extends LitWithoutShadowDom {
     return html`
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">${this.brandName}</a>
+          <a class="navbar-brand" href="/">${this.brandName}</a>
           <button
             class="navbar-toggler"
             type="button"
