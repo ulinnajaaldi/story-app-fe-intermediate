@@ -11,6 +11,7 @@ class HeroElement extends LitElement {
       justify-content: center;
       align-items: center;
       margin-top: 6rem;
+      text-align: center;
     }
     img {
       width: 340px;
