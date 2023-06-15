@@ -118,6 +118,21 @@ $transition-all: all 0.3s ease-in-out;
     }
   }
 }
+.dropdown{
+  #dropdownMenuButton1{
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.55);
+    color: rgba(0, 0, 0, 0.55);
+    border-radius: 100%;
+    
+    &:hover, &:focus, &:active, &:focus:active, &:focus-visible{
+      background-color: #ffffff;
+      border-color: rgba(0, 0, 0, 0.55);
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
 
 //
 // Custom button color
