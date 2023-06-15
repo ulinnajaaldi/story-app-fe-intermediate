@@ -1,3 +1,5 @@
+import { getLocale, setLocale } from '../localization';
+
 const Home = {
   itemsDisplayed: 0,
   itemsPerLoad: 3,
@@ -8,6 +10,10 @@ const Home = {
   },
 
   async _initialData() {
+    const storedLocale = localStorage.getItem('selected-locale');
+    if (storedLocale && storedLocale !== getLocale()) {
+      setLocale(storedLocale);
+    }
     const fetchRecord = await fetch('/data/DATA.json');
     const responseRecord = await fetchRecord.json();
     this.allListStory = responseRecord.listStory;

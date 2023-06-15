@@ -1,3 +1,5 @@
+import { getLocale, setLocale } from '../localization';
+
 const EditStory = {
   async init() {
     await this._initialData();
@@ -5,6 +7,11 @@ const EditStory = {
   },
 
   async _initialData() {
+    const storedLocale = localStorage.getItem('selected-locale');
+    if (storedLocale && storedLocale !== getLocale()) {
+      setLocale(storedLocale);
+    }
+
     const storyId = this._getStoryId();
 
     if (!storyId) {

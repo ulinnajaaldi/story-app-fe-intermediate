@@ -1,9 +1,15 @@
+import { getLocale, setLocale } from '../localization';
+
 const AddStory = {
   async init() {
     this._initialListener();
   },
 
   _initialListener() {
+    const storedLocale = localStorage.getItem('selected-locale');
+    if (storedLocale && storedLocale !== getLocale()) {
+      setLocale(storedLocale);
+    }
     const addStoryForm = document.querySelector('#add-story-form');
     addStoryForm.addEventListener(
       'submit',

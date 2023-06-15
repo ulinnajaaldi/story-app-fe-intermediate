@@ -1,5 +1,6 @@
 import { html } from 'lit';
 import LitWithoutShadowDom from './base/lit-without-shadow-dom';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 class NavbarElement extends LitWithoutShadowDom {
   static properties = {
@@ -9,6 +10,7 @@ class NavbarElement extends LitWithoutShadowDom {
   constructor() {
     super();
     this._checkAvailabilityProperty();
+    updateWhenLocaleChanges(this);
   }
 
   _checkAvailabilityProperty() {
@@ -58,9 +60,13 @@ class NavbarElement extends LitWithoutShadowDom {
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-3 align-items-center pe-3">
-                <nav-link to="/" content="Home"></nav-link>
-                <nav-link to="/user/add-story.html" content="Tambah Ceritamu"></nav-link>
-                <nav-link-button to="/user/dashboard.html" content="Dashboard"></nav-link-button>
+                <nav-link to="/" content="${msg(`Beranda`)}"></nav-link>
+                <nav-link to="/user/add-story.html" content="${msg(`Tambah Ceritamu`)}"></nav-link>
+                <nav-link-button
+                  to="/user/dashboard.html"
+                  content="${msg(`Dasbor`)}"
+                ></nav-link-button>
+                <nav-locale-picker class="nav-item"></nav-locale-picker>
               </ul>
             </div>
           </div>

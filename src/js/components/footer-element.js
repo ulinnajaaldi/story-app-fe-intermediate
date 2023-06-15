@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 class FooterElement extends LitElement {
   static styles = css`
     p {
@@ -16,10 +16,16 @@ class FooterElement extends LitElement {
       text-decoration: none;
     }
   `;
+
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
+
   render() {
     return html`
       <p>
-        Made with <span>❤</span> from
+        ${msg(`Dibuat dengan`)} <span>❤</span> ${msg(`dari`)}
         <a href="https://github.com/ulinnajaaldi" target="_blank" rel="noopener noreferrer"
           >Ulinnaja Aldi</a
         >

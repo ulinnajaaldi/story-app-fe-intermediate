@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 class HeroElement extends LitElement {
   static styles = css`
@@ -26,12 +27,17 @@ class HeroElement extends LitElement {
     }
   `;
 
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
+
   render() {
     return html`
       <section>
         <img src="assets/images/cats.png" alt="gambar kucing imut" />
         <h5>Ceritain</h5>
-        <p>Ceritakan semua yang pengen kamu ceritakan!</p>
+        <p>${msg(`Ceritakan semua yang pengen kamu ceritakan!`)}</p>
       </section>
     `;
   }

@@ -1,5 +1,6 @@
 import { html } from 'lit';
 import LitWithoutShadowDom from './base/lit-without-shadow-dom';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 class ProfileCardElement extends LitWithoutShadowDom {
   static properties = {
@@ -10,6 +11,7 @@ class ProfileCardElement extends LitWithoutShadowDom {
   constructor() {
     super();
     this._checkAvailabilityProperty();
+    updateWhenLocaleChanges(this);
   }
 
   _checkAvailabilityProperty() {
@@ -44,7 +46,7 @@ class ProfileCardElement extends LitWithoutShadowDom {
           </div>
         </div>
         <div id="user-post-element">
-          <h5>Postingan dari ${this.name}</h5>
+          <h5>${msg(`Postingan dari`)} ${this.name}</h5>
         </div>
       </section>
     `;

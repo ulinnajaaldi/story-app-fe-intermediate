@@ -11,10 +11,10 @@
     </header>
 
     <main class="container mt-8">
-      <h5 class="text-center">Edit Ceritamu</h5>
+      <form-title-edit-story></form-title-edit-story>
       <form id="edit-story-form" class="needs-validation" novalidate>
         <div class="mb-3">
-          <label for="validationCustomStory" class="form-label d-none">Ceritamu</label>
+          <label-textarea class="d-none"></label-textarea>
           <textarea-with-validation
             inputId="validationCustomStory"
             invalidFeedbackMessage="Cerita tidak boleh kosong"
@@ -23,16 +23,14 @@
         </div>
 
         <div class="mb-3">
-          <label for="validationCustomEvidence" class="form-label">Upload foto</label>
+          <label-input-image></label-input-image>
           <input-image-with-preview
             id="inputImagePreviewEdit"
             inputId="validationCustomEvidence"
             invalidFeedbackMessage="Wajib mengganti photo"
           ></input-image-with-preview>
         </div>
-        <div class="d-flex justify-content-center">
-          <button type="submit" class="btn btn-primary">Bagikan cerita</button>
-        </div>
+        <button-share-story></button-share-story>
       </form>
     </main>
 
