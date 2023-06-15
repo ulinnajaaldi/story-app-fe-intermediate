@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<file target-language="ja" source-language="id" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="se5668c8fab86600f">
+  <source>Ceritakan semua yang pengen kamu ceritakan!</source>
+  <target>あなたが話したいことをすべて話してください！</target>
+</trans-unit>
+<trans-unit id="s2b1152796101df65">
+  <source>Dibuat dengan</source>
+  <target>作成</target>
+</trans-unit>
+<trans-unit id="s8561596730a7bc7f">
+  <source>dari</source>
+  <target>から</target>
+</trans-unit>
+<trans-unit id="sce43d420b27c5f7a">
+  <source>Beranda</source>
+  <target>ホーム</target>
+</trans-unit>
+<trans-unit id="s89f22a9f54f19a80">
+  <source>Tambah Ceritamu</source>
+  <target>あなたのストーリーを追加する</target>
+</trans-unit>
+<trans-unit id="sf9a862bfd829397e">
+  <source>Dasbor</source>
+  <target>ダッシュボード</target>
+</trans-unit>
+<trans-unit id="sac895a732f35075f">
+  <source>Dari</source>
+  <target>から</target>
+</trans-unit>
+<trans-unit id="s1b1d78ca30914aa6">
+  <source>Dibuat pada</source>
+  <target>作成日時：</target>
+</trans-unit>
+<trans-unit id="s5210adea8b887b09">
+  <source>Sunting Cerita</source>
+  <target>ストーリーを編集する</target>
+</trans-unit>
+<trans-unit id="s25d58a4f7aed695c">
+  <source>Hapus Cerita</source>
+  <target>ストーリーを削除する</target>
+</trans-unit>
+<trans-unit id="s506f8b566e9bb5cc">
+  <source>Postingan dari</source>
+  <target>からの投稿 </target>
+</trans-unit>
+<trans-unit id="saf11cb67a773f4b8">
+  <source>Muat lebih banyak</source>
+  <target>もっと読み込む</target>
+</trans-unit>
+<trans-unit id="s036742b81439e088">
+  <source>Bagikan cerita</source>
+  <target>ストーリーを共有する</target>
+</trans-unit>
+<trans-unit id="s25807183d7c8894d">
+  <source>Ceritamu</source>
+  <target>あなたの物語</target>
+</trans-unit>
+<trans-unit id="sedb2b4c161373102">
+  <source>Tulis ceritamu</source>
+  <target>あなたのストーリーを書いてください</target>
+</trans-unit>
+<trans-unit id="s1e0d705b550ce1fb">
+  <source>Sunting Ceritamu</source>
+  <target>ストーリーを編集する</target>
+</trans-unit>
+<trans-unit id="saca10295a606fc68">
+  <source>Kirim ceritamu di</source>
+  <target>あなたのストーリーを投稿してください</target>
+</trans-unit>
+<trans-unit id="s9a78ac073fc5f049">
+  <source>Unggah foto</source>
+  <target>写真をアップロードする</target>
+</trans-unit>
+</body>
+</file>
+</xliff>
