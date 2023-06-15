@@ -16,6 +16,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.20.2",
+    "@lit/localize-tools": "^0.6.9",
     "autoprefixer": "10.4.13",
     "babel-loader": "^9.1.0",
     "clean-webpack-plugin": "4.0.0",
@@ -34,6 +35,7 @@
     "webpack-merge": "5.8.0"
   },
   "dependencies": {
+    "@lit/localize": "^0.11.4",
     "@popperjs/core": "2.11.6",
     "bootstrap": "5.2.2",
     "bootstrap-icons": "1.10.2",
