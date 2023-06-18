@@ -74,6 +74,14 @@
   <source>Unggah foto</source>
   <target>写真をアップロードする</target>
 </trans-unit>
+<trans-unit id="s52d46f243dffd99d">
+  <source>Cerita tidak boleh kosong</source>
+  <target>ストーリーを空にすることはできません</target>
+</trans-unit>
+<trans-unit id="se62ecdd45f99e93f">
+  <source>Gambar tidak boleh kosong</source>
+  <target>画像を空にすることはできません</target>
+</trans-unit>
 </body>
 </file>
 </xliff>

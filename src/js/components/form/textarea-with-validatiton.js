@@ -8,7 +8,6 @@ class TextareaWithValidation extends LitWithoutShadowDom {
     inputId: { type: String, reflect: true },
 
     validFeedbackMessage: { type: String, reflect: true },
-    invalidFeedbackMessage: { type: String, reflect: true },
 
     required: { type: Boolean, reflect: true },
   };
@@ -21,10 +20,8 @@ class TextareaWithValidation extends LitWithoutShadowDom {
   }
 
   _checkAvailabilityProperty() {
-    if (!this.hasAttribute('invalidFeedbackMessage')) {
-      throw new Error(
-        `Atribut "invalidFeedbackMessage" harus diterapkan pada elemen ${this.localName}`,
-      );
+    if (!this.hasAttribute('inputId')) {
+      throw new Error(`Atribut "inputId" harus diterapkan pada elemen ${this.localName}`);
     }
   }
 
@@ -41,7 +38,7 @@ class TextareaWithValidation extends LitWithoutShadowDom {
       ></textarea>
 
       ${this._validFeedbackTemplate()}
-      <div class="invalid-feedback">${this.invalidFeedbackMessage}</div>
+      <div class="invalid-feedback">${msg(`Cerita tidak boleh kosong`)}</div>
     `;
   }
 

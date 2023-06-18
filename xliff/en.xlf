@@ -74,6 +74,14 @@
   <source>Unggah foto</source>
   <target>Upload photo</target>
 </trans-unit>
+<trans-unit id="s52d46f243dffd99d">
+  <source>Cerita tidak boleh kosong</source>
+  <target>Stories cannot be empty</target>
+</trans-unit>
+<trans-unit id="se62ecdd45f99e93f">
+  <source>Gambar tidak boleh kosong</source>
+  <target>Image cannot be empty</target>
+</trans-unit>
 </body>
 </file>
 </xliff>

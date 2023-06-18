@@ -17,6 +17,7 @@
 's2b1152796101df65': `Fait avec`,
 's506f8b566e9bb5cc': `Publications de `,
 's5210adea8b887b09': `Modifier l'histoire`,
+'s52d46f243dffd99d': `Les histoires ne peuvent pas être vides`,
 's8561596730a7bc7f': `de`,
 's89f22a9f54f19a80': `Ajouter votre histoire`,
 's9a78ac073fc5f049': `Télécharger une photo`,
@@ -25,6 +26,7 @@
 'saf11cb67a773f4b8': `Charger plus`,
 'sce43d420b27c5f7a': `Accueil`,
 'se5668c8fab86600f': `Racontez tout ce que vous voulez raconter!`,
+'se62ecdd45f99e93f': `L'image ne peut pas être vide`,
 'sedb2b4c161373102': `Écrivez votre histoire`,
 'sf9a862bfd829397e': `Tableau de bord`,
     };

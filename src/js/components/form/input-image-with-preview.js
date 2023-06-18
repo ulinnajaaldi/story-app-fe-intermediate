@@ -1,5 +1,6 @@
 import { html, nothing } from 'lit';
 import LitWithoutShadowDom from '../base/lit-without-shadow-dom';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 class InputImageWithPreview extends LitWithoutShadowDom {
   static properties = {
@@ -8,7 +9,6 @@ class InputImageWithPreview extends LitWithoutShadowDom {
     defaultImageAlt: { type: String, reflect: true },
 
     validFeedbackMessage: { type: String, reflect: true },
-    invalidFeedbackMessage: { type: String, reflect: true },
 
     required: { type: Boolean, reflect: true },
   };
@@ -16,9 +16,17 @@ class InputImageWithPreview extends LitWithoutShadowDom {
   constructor() {
     super();
 
+    this._checkAvailabilityProperty();
     this.type = 'text';
     this.defaultImage = '';
     this.defaultImageAlt = '';
+    updateWhenLocaleChanges(this);
+  }
+
+  _checkAvailabilityProperty() {
+    if (!this.hasAttribute('inputId')) {
+      throw new Error(`Atribut "inputId" harus diterapkan pada elemen ${this.localName}`);
+    }
   }
 
   render() {
@@ -35,7 +43,8 @@ class InputImageWithPreview extends LitWithoutShadowDom {
         @change=${this._updatePhotoPreview}
       />
 
-      ${this._feedbackTemplate()}
+      ${this._validFeedbackTemplate()}
+      <div class="invalid-feedback">${msg(`Gambar tidak boleh kosong`)}</div>
     `;
   }
 
@@ -64,21 +73,11 @@ class InputImageWithPreview extends LitWithoutShadowDom {
     reader.readAsDataURL(photo);
   }
 
-  _feedbackTemplate() {
-    let validFeedbackTemplate = '';
-    let invalidFeedbackTemplate = '';
+  _validFeedbackTemplate() {
     if (this.validFeedbackMessage) {
-      validFeedbackTemplate = html`
-        <div class="valid-feedback">${this.validFeedbackMessage}</div>
-      `;
+      return html` <div class="valid-feedback">${this.validFeedbackMessage}</div> `;
     }
-    if (this.invalidFeedbackMessage) {
-      invalidFeedbackTemplate = html`
-        <div class="invalid-feedback">${this.invalidFeedbackMessage}</div>
-      `;
-    }
-
-    return html`${validFeedbackTemplate}${invalidFeedbackTemplate}`;
+    return html``;
   }
 
   _imagePreviewTemplate() {

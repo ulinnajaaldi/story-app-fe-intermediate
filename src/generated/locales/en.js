@@ -17,6 +17,7 @@
 's2b1152796101df65': `Made with`,
 's506f8b566e9bb5cc': `Posts from`,
 's5210adea8b887b09': `Edit Story`,
+'s52d46f243dffd99d': `Stories cannot be empty`,
 's8561596730a7bc7f': `from`,
 's89f22a9f54f19a80': `Add Your Story`,
 's9a78ac073fc5f049': `Upload photo`,
@@ -25,6 +26,7 @@
 'saf11cb67a773f4b8': `Load more`,
 'sce43d420b27c5f7a': `Home`,
 'se5668c8fab86600f': `Tell everything you want to tell!`,
+'se62ecdd45f99e93f': `Image cannot be empty`,
 'sedb2b4c161373102': `Write your story`,
 'sf9a862bfd829397e': `Dashboard`,
     };
