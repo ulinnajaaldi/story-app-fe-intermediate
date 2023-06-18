@@ -33,7 +33,7 @@ class CardStoryDashboard extends LitWithoutShadowDom {
 
   render() {
     return html`
-      <div class="d-flex flex-row justify-content-center align-items-start gap-1 py-2">
+      <div class="d-flex flex-row justify-content-center align-items-start gap-md-3 gap-2 py-2">
         <div class="card">
           <img src="${this.image}}" class="card-img-top" alt="${this.name}" />
           <div class="card-body">
