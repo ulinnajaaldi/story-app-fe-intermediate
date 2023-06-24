@@ -1,7 +1,11 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-extraneous-dependencies */
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const htmlWebpackPluginConfig = {
   meta: {
@@ -102,5 +106,6 @@ module.exports = {
       ],
     }),
     new CleanWebpackPlugin(),
+    new ESLintPlugin({ extensions: ['js'] }),
   ],
 };
