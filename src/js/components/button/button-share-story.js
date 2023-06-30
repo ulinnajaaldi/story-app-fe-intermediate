@@ -10,7 +10,15 @@ class ButtonShareStory extends LitWithoutShadowDom {
 
   render() {
     return html` <div class="d-flex justify-content-center">
-      <button type="submit" class="btn btn-primary">${msg(`Bagikan cerita`)}</button>
+      <button
+        type="submit"
+        class="btn btn-primary d-flex justify-content-center align-items-center gap-2"
+      >
+        <div class="spinner-border d-none" role="status" id="spinner-share-story">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        ${msg(`Bagikan cerita`)}
+      </button>
     </div>`;
   }
 }
