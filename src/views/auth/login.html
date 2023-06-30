@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body class="min-vh-100 d-flex align-items-center justify-content-center">
+    <header class="d-absolute">
+      <nav-locale-picker class="position-absolute bottom-0 end-0 mb-3 me-3"></nav-locale-picker>
+    </header>
+
+    <main class="container">
+      <login-header-element to="/auth/register.html"></login-header-element>
+      <div class="py-3">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div id="alert-wrapper"></div>
+            <form id="loginForm" novalidate>
+              <div class="mb-3">
+                <label for="validationCustomRecordEmail" class="form-label text-align-center"
+                  >Email</label
+                >
+                <input-with-validation
+                  type="email"
+                  inputId="validationCustomRecordEmail"
+                  required
+                ></input-with-validation>
+              </div>
+
+              <div class="mb-3">
+                <label for="validationCustomPassword" class="form-label">Password</label>
+                <input-password-with-validation
+                  type="password"
+                  inputId="validationCustomPassword"
+                  required
+                ></input-password-with-validation>
+              </div>
+
+              <auth-login-button customStyle="btn-success"></auth-login-button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

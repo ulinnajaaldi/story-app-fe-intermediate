@@ -93,6 +93,27 @@ module.exports = {
       template: path.resolve(__dirname, 'src/views/user/edit-story.html'),
       ...htmlWebpackPluginConfig,
     }),
+    new HtmlWebpackPlugin({
+      title: 'Login - Ceritain!',
+      filename: 'auth/login.html',
+      favicon: path.resolve(__dirname, 'src/public/favicon.png'),
+      template: path.resolve(__dirname, 'src/views/auth/login.html'),
+      ...htmlWebpackPluginConfig,
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Register - Ceritain!',
+      filename: 'auth/register.html',
+      favicon: path.resolve(__dirname, 'src/public/favicon.png'),
+      template: path.resolve(__dirname, 'src/views/auth/register.html'),
+      ...htmlWebpackPluginConfig,
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Ceritain!',
+      filename: 'user/add-guest-story.html',
+      favicon: path.resolve(__dirname, 'src/public/favicon.png'),
+      template: path.resolve(__dirname, 'src/views/user/add-guest-story.html'),
+      ...htmlWebpackPluginConfig,
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -102,6 +123,10 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/public/'),
           to: path.resolve(__dirname, 'dist/user/'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/public/'),
+          to: path.resolve(__dirname, 'dist/auth/'),
         },
       ],
     }),
