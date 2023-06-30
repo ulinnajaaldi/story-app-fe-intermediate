@@ -82,6 +82,94 @@
   <source>Gambar tidak boleh kosong</source>
   <target>画像を空にすることはできません</target>
 </trans-unit>
+<trans-unit id="s229fb4df9ecf3ed1">
+  <source>Keluar</source>
+  <target>外出</target>
+</trans-unit>
+<trans-unit id="s116a8d48166d06f0">
+  <source>Berhasil mendaftarkan akun</source>
+  <target>アカウントが正常に登録されました</target>
+</trans-unit>
+<trans-unit id="sdfa7eac03f7b28e9">
+  <source>Akan dialihkan ke laman Masuk</source>
+  <target>ログインページにリダイレクトされます</target>
+</trans-unit>
+<trans-unit id="sb1a4bc14542488cb">
+  <source>Gagal mendaftarkan akun!</source>
+  <target>アカウントの登録に失敗しました!</target>
+</trans-unit>
+<trans-unit id="s38785fa6d9839658">
+  <source>Masukan data dengan benar.</source>
+  <target>データを正しく入力してください。</target>
+</trans-unit>
+<trans-unit id="sef81340231617e9f">
+  <source>Akun tidak ditemukan</source>
+  <target>アカウントが見つかりません</target>
+</trans-unit>
+<trans-unit id="s49612d19cda89771">
+  <source>Hai</source>
+  <target>やあ</target>
+</trans-unit>
+<trans-unit id="s6b8e82048af07ec9">
+  <source>Selamat datang di halaman dashboard pribadimu. Di sini, kamu
+                  dapat dengan mudah memposting, mengedit, atau menghapus cerita-ceritamu sesuka
+                  hati.</source>
+  <target>個人のダッシュボード ページへようこそ。はい、どうぞ
+                  ストーリーを自由に簡単に投稿、編集、削除できます
+                  心臓。</target>
+</trans-unit>
+<trans-unit id="s890aa51e55ae68b7">
+  <source>Tidak ada cerita terbaru dari</source>
+  <target>最近の記事はありません</target>
+</trans-unit>
+<trans-unit id="s45dab30b4d2d3c14">
+  <source>Masuk</source>
+  <target>入力</target>
+</trans-unit>
+<trans-unit id="sf6fc1a3ab0cdc917">
+  <source>Daftar Sekarang</source>
+  <target>今すぐサインアップ</target>
+</trans-unit>
+<trans-unit id="sdad81b8d95fc0c93">
+  <source>Tambah cerita sebagai tamu</source>
+  <target>ゲストとしてストーリーを追加する</target>
+</trans-unit>
+<trans-unit id="sbef0c78f28053c51">
+  <source>Peringatan!</source>
+  <target>警告！</target>
+</trans-unit>
+<trans-unit id="s99795f2a7cf6ef11">
+  <source>Saat ini kamu mengirimkan cerita sebagai tamu</source>
+  <target>あなたは現在ゲストとしてストーリーを投稿しています</target>
+</trans-unit>
+<trans-unit id="s5f5e28285b2e25de">
+  <source>Tambah cerita sebagai</source>
+  <target>ストーリーを追加</target>
+</trans-unit>
+<trans-unit id="sef1ae18cfaa23e14">
+  <source>Wajib diisi</source>
+  <target>必須</target>
+</trans-unit>
+<trans-unit id="sc6d8f68597817c50">
+  <source>Ayo masuk untuk mulai bercerita!</source>
+  <target>さあ、物語を語り始めましょう！</target>
+</trans-unit>
+<trans-unit id="s217d36c07e070a8c">
+  <source>Belum punya akun? ayo </source>
+  <target>まだアカウントをお持ちでない場合は、来て </target>
+</trans-unit>
+<trans-unit id="sd93ff51dd0da1dbf">
+  <source>Daftar</source>
+  <target>リスト</target>
+</trans-unit>
+<trans-unit id="sbdd5f0e6c8fa262a">
+  <source>Ayo buat akun sekarang!</source>
+  <target>今すぐアカウントを作成しましょう!</target>
+</trans-unit>
+<trans-unit id="s20dbf9a26584f60c">
+  <source>Sudah punya akun? ayo </source>
+  <target>すでにアカウントをお持ちですか？来て</target>
+</trans-unit>
 </body>
 </file>
 </xliff>

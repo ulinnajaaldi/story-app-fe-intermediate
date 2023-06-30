@@ -1,33 +1,50 @@
+// Do not modify this file by hand!
+// Re-generate this file by running lit-localize
 
-    // Do not modify this file by hand!
-    // Re-generate this file by running lit-localize
+/* eslint-disable no-irregular-whitespace */
 
-    
-    
-
-    /* eslint-disable no-irregular-whitespace */
-    /* eslint-disable @typescript-eslint/no-explicit-any */
-
-    export const templates = {
-      's036742b81439e088': `Share stories`,
-'s1b1d78ca30914aa6': `Created on`,
-'s1e0d705b550ce1fb': `Edit Your Story`,
-'s25807183d7c8894d': `Your story`,
-'s25d58a4f7aed695c': `Delete Story`,
-'s2b1152796101df65': `Made with`,
-'s506f8b566e9bb5cc': `Posts from`,
-'s5210adea8b887b09': `Edit Story`,
-'s52d46f243dffd99d': `Stories cannot be empty`,
-'s8561596730a7bc7f': `from`,
-'s89f22a9f54f19a80': `Add Your Story`,
-'s9a78ac073fc5f049': `Upload photo`,
-'sac895a732f35075f': `From`,
-'saca10295a606fc68': `Send your story at`,
-'saf11cb67a773f4b8': `Load more`,
-'sce43d420b27c5f7a': `Home`,
-'se5668c8fab86600f': `Tell everything you want to tell!`,
-'se62ecdd45f99e93f': `Image cannot be empty`,
-'sedb2b4c161373102': `Write your story`,
-'sf9a862bfd829397e': `Dashboard`,
-    };
-  
+export const templates = {
+  s036742b81439e088: `Share stories`,
+  s116a8d48166d06f0: `Successfully registered an account`,
+  s1b1d78ca30914aa6: `Created on`,
+  s1e0d705b550ce1fb: `Edit Your Story`,
+  s20dbf9a26584f60c: `Already have an account? Come on `,
+  s217d36c07e070a8c: `Don't have an account yet? Come on `,
+  s229fb4df9ecf3ed1: `Logout`,
+  s25807183d7c8894d: `Your story`,
+  s25d58a4f7aed695c: `Delete Story`,
+  s2b1152796101df65: `Made with`,
+  s38785fa6d9839658: `Enter data correctly.`,
+  s45dab30b4d2d3c14: `Login`,
+  s49612d19cda89771: `Hi`,
+  s506f8b566e9bb5cc: `Posts from`,
+  s5210adea8b887b09: `Edit Story`,
+  s52d46f243dffd99d: `Stories cannot be empty`,
+  s5f5e28285b2e25de: `Add story as`,
+  s6b8e82048af07ec9: `Welcome to your personal dashboard page. Here you are
+                  can easily post, edit or delete your stories at will
+                  heart.`,
+  s8561596730a7bc7f: `from`,
+  s890aa51e55ae68b7: `There are no recent stories from`,
+  s89f22a9f54f19a80: `Add Your Story`,
+  s99795f2a7cf6ef11: `You are currently submitting a story as a guest`,
+  s9a78ac073fc5f049: `Upload photo`,
+  sac895a732f35075f: `From`,
+  saca10295a606fc68: `Send your story at`,
+  saf11cb67a773f4b8: `Load more`,
+  sb1a4bc14542488cb: `Failed to register account!`,
+  sbdd5f0e6c8fa262a: `Let's create an account now!`,
+  sbef0c78f28053c51: `Warning!`,
+  sc6d8f68597817c50: `Let's login to start telling stories!`,
+  sce43d420b27c5f7a: `Home`,
+  sd93ff51dd0da1dbf: `Register`,
+  sdad81b8d95fc0c93: `Add a story as a guest`,
+  sdfa7eac03f7b28e9: `Will be redirected to the Login page`,
+  se5668c8fab86600f: `Tell everything you want to tell!`,
+  se62ecdd45f99e93f: `Image cannot be empty`,
+  sedb2b4c161373102: `Write your story`,
+  sef1ae18cfaa23e14: `Mandatory`,
+  sef81340231617e9f: `Account not found`,
+  sf6fc1a3ab0cdc917: `Register now`,
+  sf9a862bfd829397e: `Dashboard`,
+};

@@ -82,6 +82,94 @@
   <source>Gambar tidak boleh kosong</source>
   <target>Image cannot be empty</target>
 </trans-unit>
+<trans-unit id="s229fb4df9ecf3ed1">
+  <source>Keluar</source>
+  <target>Logout</target>
+</trans-unit>
+<trans-unit id="s116a8d48166d06f0">
+  <source>Berhasil mendaftarkan akun</source>
+  <target>Successfully registered an account</target>
+</trans-unit>
+<trans-unit id="sdfa7eac03f7b28e9">
+  <source>Akan dialihkan ke laman Masuk</source>
+  <target>Will be redirected to the Login page</target>
+</trans-unit>
+<trans-unit id="sb1a4bc14542488cb">
+  <source>Gagal mendaftarkan akun!</source>
+  <target>Failed to register account!</target>
+</trans-unit>
+<trans-unit id="s38785fa6d9839658">
+  <source>Masukan data dengan benar.</source>
+  <target>Enter data correctly.</target>
+</trans-unit>
+<trans-unit id="sef81340231617e9f">
+  <source>Akun tidak ditemukan</source>
+  <target>Account not found</target>
+</trans-unit>
+<trans-unit id="s49612d19cda89771">
+  <source>Hai</source>
+  <target>Hi</target>
+</trans-unit>
+<trans-unit id="s6b8e82048af07ec9">
+  <source>Selamat datang di halaman dashboard pribadimu. Di sini, kamu
+                  dapat dengan mudah memposting, mengedit, atau menghapus cerita-ceritamu sesuka
+                  hati.</source>
+  <target>Welcome to your personal dashboard page. Here you are
+                  can easily post, edit or delete your stories at will
+                  heart.</target>
+</trans-unit>
+<trans-unit id="s890aa51e55ae68b7">
+  <source>Tidak ada cerita terbaru dari</source>
+  <target>There are no recent stories from</target>
+</trans-unit>
+<trans-unit id="s45dab30b4d2d3c14">
+  <source>Masuk</source>
+  <target>Login</target>
+</trans-unit>
+<trans-unit id="sf6fc1a3ab0cdc917">
+  <source>Daftar Sekarang</source>
+  <target>Register now</target>
+</trans-unit>
+<trans-unit id="sdad81b8d95fc0c93">
+  <source>Tambah cerita sebagai tamu</source>
+  <target>Add a story as a guest</target>
+</trans-unit>
+<trans-unit id="sbef0c78f28053c51">
+  <source>Peringatan!</source>
+  <target>Warning!</target>
+</trans-unit>
+<trans-unit id="s99795f2a7cf6ef11">
+  <source>Saat ini kamu mengirimkan cerita sebagai tamu</source>
+  <target>You are currently submitting a story as a guest</target>
+</trans-unit>
+<trans-unit id="s5f5e28285b2e25de">
+  <source>Tambah cerita sebagai</source>
+  <target>Add story as</target>
+</trans-unit>
+<trans-unit id="sef1ae18cfaa23e14">
+  <source>Wajib diisi</source>
+  <target>Mandatory</target>
+</trans-unit>
+<trans-unit id="sc6d8f68597817c50">
+  <source>Ayo masuk untuk mulai bercerita!</source>
+  <target>Let's login to start telling stories!</target>
+</trans-unit>
+<trans-unit id="s217d36c07e070a8c">
+  <source>Belum punya akun? ayo </source>
+  <target>Don't have an account yet? Come on </target>
+</trans-unit>
+<trans-unit id="sd93ff51dd0da1dbf">
+  <source>Daftar</source>
+  <target>Register</target>
+</trans-unit>
+<trans-unit id="sbdd5f0e6c8fa262a">
+  <source>Ayo buat akun sekarang!</source>
+  <target>Let's create an account now!</target>
+</trans-unit>
+<trans-unit id="s20dbf9a26584f60c">
+  <source>Sudah punya akun? ayo </source>
+  <target>Already have an account? Come on </target>
+</trans-unit>
 </body>
 </file>
 </xliff>
