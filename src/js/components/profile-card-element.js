@@ -1,29 +1,17 @@
 import { html } from 'lit';
 import LitWithoutShadowDom from './base/lit-without-shadow-dom';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
+import Utils from '../utils/utils';
 
 class ProfileCardElement extends LitWithoutShadowDom {
-  static properties = {
-    name: { type: String, reflect: true },
-    description: { type: String, reflect: true },
-  };
-
   constructor() {
     super();
-    this._checkAvailabilityProperty();
     updateWhenLocaleChanges(this);
   }
 
-  _checkAvailabilityProperty() {
-    if (!this.hasAttribute('name')) {
-      throw new Error(`Atribut "name" harus diterapkan pada elemen ${this.localName}`);
-    }
-    if (!this.hasAttribute('description')) {
-      throw new Error(`Atribut "description" harus diterapkan pada elemen ${this.localName}`);
-    }
-  }
-
   render() {
+    const userName = Utils.getUserName();
+
     return html`
       <section>
         <div
@@ -33,20 +21,25 @@ class ProfileCardElement extends LitWithoutShadowDom {
           <div class="card" id="profile-card">
             <div class="card-body d-flex flex-row justify-content-start align-items-center gap-4">
               <img
-                src="https://github.com/ulinnajaaldi.png"
+                src="https://api.dicebear.com/6.x/pixel-art/svg?seed=${userName}"
                 class="img-fluid rounded-circle object-fit-cover"
-                alt="${this.name}"
+                alt="${userName}"
                 id="profile-picture"
               />
               <div>
-                <h5 class="card-title">${this.name}</h5>
-                <p class="card-text">${this.description}</p>
+                <h5 class="card-title">${userName}</h5>
+                <p class="card-text">
+                  ${msg(`Hai`)}, ${userName}!
+                  ${msg(`Selamat datang di halaman dashboard pribadimu. Di sini, kamu
+                  dapat dengan mudah memposting, mengedit, atau menghapus cerita-ceritamu sesuka
+                  hati.`)}
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div id="user-post-element">
-          <h5>${msg(`Postingan dari`)} ${this.name}</h5>
+          <h5>${msg(`Postingan dari`)} ${userName}</h5>
         </div>
       </section>
     `;

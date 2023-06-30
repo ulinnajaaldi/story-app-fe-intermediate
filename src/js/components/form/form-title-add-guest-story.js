@@ -3,7 +3,7 @@ import LitWithoutShadowDom from '../base/lit-without-shadow-dom';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
 import Utils from '../../utils/utils';
 
-class FormTitleAddStory extends LitWithoutShadowDom {
+class FormTitleAddGuestStory extends LitWithoutShadowDom {
   constructor() {
     super();
     updateWhenLocaleChanges(this);
@@ -12,14 +12,14 @@ class FormTitleAddStory extends LitWithoutShadowDom {
   render() {
     return html`
       <h5 class="text-center">
-        ${msg(`Hai`)} ${Utils.getUserName()} <br />
-        ${msg(`Kirim ceritamu di`)} Ceritain! <br />
+        ${msg(`Peringatan!`)} <br />
+        ${msg(`Saat ini kamu mengirimkan cerita sebagai tamu`)}<br />
       </h5>
       <p class="text-center">
-        <a href="/user/add-guest-story.html"> ${msg(`Tambah cerita sebagai tamu`)}?</a>
+        <a href="/user/add-story.html"> ${msg(`Tambah cerita sebagai`)} ${Utils.getUserName()}?</a>
       </p>
     `;
   }
 }
 
-customElements.define('form-title-add-story', FormTitleAddStory);
+customElements.define('form-title-add-guest-story', FormTitleAddGuestStory);
