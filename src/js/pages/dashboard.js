@@ -1,7 +1,11 @@
 import { getLocale, setLocale } from '../localization';
+import CheckUserAuth from './auth/check-user-auth';
+import Utils from '../utils/utils';
+import CrudStory from '../networks/crud-story';
 
 const Dashboard = {
   async init() {
+    CheckUserAuth.checkLoginState();
     this._showSpinner();
     await this._initialData();
     this._hideSpinner();
@@ -13,9 +17,14 @@ const Dashboard = {
     if (storedLocale && storedLocale !== getLocale()) {
       setLocale(storedLocale);
     }
-    const fetchRecord = await fetch('/data/DATA.json');
-    const responseRecord = await fetchRecord.json();
-    this.allListStory = responseRecord.listStory;
+    try {
+      const response = await CrudStory.getAllStory();
+      const responseRecord = response.data.listStory;
+      const filterStory = responseRecord.filter((story) => story.name === Utils.getUserName());
+      this.allListStory = filterStory;
+    } catch (error) {
+      console.log(error);
+    }
     this._displayStories();
   },
 
@@ -40,6 +49,11 @@ const Dashboard = {
             </card-story-dashboard>
           `;
     });
+    if (storiesToDisplay.length === 0) {
+      section.innerHTML += `
+            <card-no-story></card-no-story>
+          `;
+    }
   },
 
   _deleteStory() {
