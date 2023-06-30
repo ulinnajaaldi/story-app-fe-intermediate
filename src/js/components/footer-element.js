@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
+
 class FooterElement extends LitElement {
   static styles = css`
     p {
