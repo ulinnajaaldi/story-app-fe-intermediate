@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
 *{
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 h1,h2,h3,h4,h5,h6,p{
 margin: 0;
@@ -15,6 +17,7 @@ $transition-all: all 0.3s ease-in-out;
 //
 
 @mixin card-style {
+  width: 700px;
   max-width: 700px;
   margin: 0 auto;
   background-color: #f2f7f5;
@@ -183,6 +186,60 @@ $transition-all: all 0.3s ease-in-out;
   }
 }
 
+.initial-avatar{
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px !important;
+  font-weight: bold;
+  background-color: #7cc9d1;
+  border-radius: 100%;
+  border: 1px solid black;
+  line-height: normal;
+}
+
+input{
+  background-color: #f5f5f5 !important;
+  filter: drop-shadow(3px 3px 0px black);
+  padding: 8px 12px !important;
+  border: 1px solid black !important;
+  &:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #000000 !important;
+  }
+}
+#myModalLabel{
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+.image-modal{
+  max-width: 100%;
+  max-height: 50vh;
+  align-self: center;
+}
+.my-custom-switch {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  justify-content: end;
+  padding-bottom: 4px;
+  .form-check-input {
+    filter: drop-shadow(2px 2px 0px black) !important;
+    &:checked {
+      background-color: #d3b0ff !important; 
+    }; 
+  }
+}
+.spinner-border{
+  --bs-spinner-width: 20px;
+  --bs-spinner-height: 20px;
+  --bs-spinner-border-width: 2px;
+}
+
 //
 // Custom button color
 //
@@ -251,6 +308,23 @@ $transition-all: all 0.3s ease-in-out;
     border-color: #000000;
     color: rgba(0, 0, 0, 0.9);
     transform: translateY(-2px);
+  }
+}
+
+.btn-success {
+  background-color: #87e1a0;
+  border-color: #000000;
+  color: rgba(0, 0, 0, 0.9);
+  filter: drop-shadow(3px 3px 0px black);
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:focus:active,
+  &:focus-visible {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: rgba(0, 0, 0, 0.9);
   }
 }
 
