@@ -35,7 +35,7 @@ class CardStoryDashboard extends LitWithoutShadowDom {
     return html`
       <div class="d-flex flex-row justify-content-center align-items-start gap-md-3 gap-2 py-2">
         <div class="card">
-          <img src="${this.image}}" class="card-img-top" alt="${this.name}" />
+          <img src="${this.image}" class="card-img-top" alt="${this.name}" />
           <div class="card-body">
             <h5 class="card-title">
               <span class="fs-6 text-opacity-50 text-black">${msg(`Dari`)} </span>${this.name}
