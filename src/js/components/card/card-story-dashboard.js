@@ -33,30 +33,30 @@ class CardStoryDashboard extends LitWithoutShadowDom {
 
   render() {
     return html`
-      <div class="d-flex flex-row justify-content-center align-items-start gap-md-3 gap-2 py-2">
-        <div class="card">
-          <img src="${this.image}" class="card-img-top" alt="${this.name}" />
-          <div class="card-body">
-            <h5 class="card-title">
-              <span class="fs-6 text-opacity-50 text-black">${msg(`Dari`)} </span>${this.name}
-            </h5>
-            <p class="card-text">${this.description}</p>
-            <p class="card-text">
-              <small class="text-muted">${msg(`Dibuat pada`)}: ${this.date}</small>
-            </p>
-          </div>
+      <div class="card position-relative">
+        <img src="${this.image}" class="card-img-top" alt="${this.name}" />
+        <div class="card-body">
+          <h5 class="card-title">
+            <span class="fs-6 text-opacity-50 text-black">${msg(`Dari`)} </span>${this.name}
+          </h5>
+          <p class="card-text">${this.description}</p>
+          <p class="card-text">
+            <small class="text-muted">${msg(`Dibuat pada`)}: ${this.date}</small>
+          </p>
         </div>
-        <div class="d-flex flex-column gap-2 mt-2" id="card-crud">
-          <a
-            href="/user/edit-story.html?id=${this.id}"
-            title="${msg(`Sunting Cerita`)}"
-            class="btn btn-warning"
-          >
-            <i class="bi bi-pencil-square"></i>
-          </a>
-          <button title="${msg(`Hapus Cerita`)}" class="btn btn-danger" id="delete-story">
-            <i class="bi bi-trash3"></i>
-          </button>
+        <div class="position-absolute translate-middle" id="functional-button">
+          <div class="d-flex flex-column gap-2" id="card-crud">
+            <a
+              href="/user/edit-story.html?id=${this.id}"
+              title="${msg(`Sunting Cerita`)}"
+              class="btn btn-warning"
+            >
+              <i class="bi bi-pencil-square"></i>
+            </a>
+            <button title="${msg(`Hapus Cerita`)}" class="btn btn-danger" id="delete-story">
+              <i class="bi bi-trash3"></i>
+            </button>
+          </div>
         </div>
       </div>
     `;
