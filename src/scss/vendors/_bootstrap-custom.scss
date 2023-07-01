@@ -17,7 +17,6 @@ $transition-all: all 0.3s ease-in-out;
 //
 
 @mixin card-style {
-  width: 700px;
   max-width: 700px;
   margin: 0 auto;
   background-color: #f2f7f5;
@@ -238,6 +237,11 @@ input{
   --bs-spinner-width: 20px;
   --bs-spinner-height: 20px;
   --bs-spinner-border-width: 2px;
+}
+
+#functional-button{
+  top: 50px;
+  right: -5px;
 }
 
 //
