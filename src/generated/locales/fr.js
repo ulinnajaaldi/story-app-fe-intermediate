@@ -24,17 +24,20 @@ export const templates = {
   s6b8e82048af07ec9: `Bienvenue sur votre page de tableau de bord personnelle. Vous voilà
                   peut facilement publier, modifier ou supprimer vos histoires à volonté
                   cœur.`,
+  s789f68bb51addb15: `L'état actuel de votre position`,
   s8561596730a7bc7f: `de`,
   s890aa51e55ae68b7: `Il n'y a pas d'histoires récentes de`,
   s89f22a9f54f19a80: `Ajouter votre histoire`,
   s99795f2a7cf6ef11: `Vous soumettez actuellement une histoire en tant qu'invité`,
   s9a78ac073fc5f049: `Télécharger une photo`,
+  s9f09f24daafe7726: `Vous pouvez partager des histoires avec votre emplacement actuel, lors de la soumission d'histoires.`,
   sac895a732f35075f: `De`,
   saca10295a606fc68: `Soumettez votre histoire sur`,
   saf11cb67a773f4b8: `Charger plus`,
   sb1a4bc14542488cb: `Échec de l'enregistrement du compte !`,
   sbdd5f0e6c8fa262a: `Créons un compte maintenant !`,
   sbef0c78f28053c51: `Avertissement!`,
+  sc2ca97b96fbd19fd: `pas actif`,
   sc6d8f68597817c50: `Entrez pour commencer à raconter des histoires !`,
   sce43d420b27c5f7a: `Accueil`,
   sd93ff51dd0da1dbf: `Liste`,
@@ -45,6 +48,7 @@ export const templates = {
   sedb2b4c161373102: `Écrivez votre histoire`,
   sef1ae18cfaa23e14: `Obligatoire`,
   sef81340231617e9f: `Compte non trouvé`,
+  sf4e340f709ed4168: `actif`,
   sf6fc1a3ab0cdc917: `S'inscrire maintenant`,
   sf9a862bfd829397e: `Tableau de bord`,
 };

@@ -170,6 +170,22 @@
   <source>Sudah punya akun? ayo </source>
   <target>Already have an account? Come on </target>
 </trans-unit>
+<trans-unit id="s9f09f24daafe7726">
+  <source>Kamu bisa membagikan cerita dengan lokasimu saat ini, ketika submit cerita.</source>
+  <target>You can share stories with your current location, when submitting stories.</target>
+</trans-unit>
+<trans-unit id="sf4e340f709ed4168">
+  <source>aktif</source>
+  <target>active</target>
+</trans-unit>
+<trans-unit id="sc2ca97b96fbd19fd">
+  <source>tidak aktif</source>
+  <target>not active</target>
+</trans-unit>
+<trans-unit id="s789f68bb51addb15">
+  <source>Status lokasimu saat ini</source>
+  <target>Your current location status</target>
+</trans-unit>
 </body>
 </file>
 </xliff>

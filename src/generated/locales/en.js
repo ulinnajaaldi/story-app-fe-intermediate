@@ -24,17 +24,20 @@ export const templates = {
   s6b8e82048af07ec9: `Welcome to your personal dashboard page. Here you are
                   can easily post, edit or delete your stories at will
                   heart.`,
+  s789f68bb51addb15: `Your current location status`,
   s8561596730a7bc7f: `from`,
   s890aa51e55ae68b7: `There are no recent stories from`,
   s89f22a9f54f19a80: `Add Your Story`,
   s99795f2a7cf6ef11: `You are currently submitting a story as a guest`,
   s9a78ac073fc5f049: `Upload photo`,
+  s9f09f24daafe7726: `You can share stories with your current location, when submitting stories.`,
   sac895a732f35075f: `From`,
   saca10295a606fc68: `Send your story at`,
   saf11cb67a773f4b8: `Load more`,
   sb1a4bc14542488cb: `Failed to register account!`,
   sbdd5f0e6c8fa262a: `Let's create an account now!`,
   sbef0c78f28053c51: `Warning!`,
+  sc2ca97b96fbd19fd: `not active`,
   sc6d8f68597817c50: `Let's login to start telling stories!`,
   sce43d420b27c5f7a: `Home`,
   sd93ff51dd0da1dbf: `Register`,
@@ -45,6 +48,7 @@ export const templates = {
   sedb2b4c161373102: `Write your story`,
   sef1ae18cfaa23e14: `Mandatory`,
   sef81340231617e9f: `Account not found`,
+  sf4e340f709ed4168: `active`,
   sf6fc1a3ab0cdc917: `Register now`,
   sf9a862bfd829397e: `Dashboard`,
 };

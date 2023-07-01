@@ -32,7 +32,7 @@
 </trans-unit>
 <trans-unit id="s1b1d78ca30914aa6">
   <source>Dibuat pada</source>
-  <target>作成日時：</target>
+  <target>作成日時</target>
 </trans-unit>
 <trans-unit id="s5210adea8b887b09">
   <source>Sunting Cerita</source>
@@ -169,6 +169,22 @@
 <trans-unit id="s20dbf9a26584f60c">
   <source>Sudah punya akun? ayo </source>
   <target>すでにアカウントをお持ちですか？来て</target>
+</trans-unit>
+<trans-unit id="s9f09f24daafe7726">
+  <source>Kamu bisa membagikan cerita dengan lokasimu saat ini, ketika submit cerita.</source>
+  <target>ストーリーを投稿するときに、現在地とストーリーを共有できます。</target>
+</trans-unit>
+<trans-unit id="sf4e340f709ed4168">
+  <source>aktif</source>
+  <target>アクティブ</target>
+</trans-unit>
+<trans-unit id="sc2ca97b96fbd19fd">
+  <source>tidak aktif</source>
+  <target>非活動中</target>
+</trans-unit>
+<trans-unit id="s789f68bb51addb15">
+  <source>Status lokasimu saat ini</source>
+  <target>現在の位置情報のステータス</target>
 </trans-unit>
 </body>
 </file>
