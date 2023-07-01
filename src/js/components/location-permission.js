@@ -45,11 +45,12 @@ class LocationPermission extends LitElement {
   render() {
     return html`
       <p>
-        * Kamu bisa membagikan cerita dengan lokasimu saat ini, ketika submit cerita. <br />
-        Status lokasimu saat ini
+        * ${msg(`Kamu bisa membagikan cerita dengan lokasimu saat ini, ketika submit cerita.`)}
+        <br />
+        ${msg(`Status lokasimu saat ini`)}
         ${this.permissionState === 'granted'
-          ? html`<span id="active">aktif</span>`
-          : html`<span id="notActive">tidak aktif</span>`}
+          ? html`<span id="active">${msg(`aktif`)}</span>`
+          : html`<span id="notActive">${msg(`tidak aktif`)}</span>`}
       </p>
     `;
   }
